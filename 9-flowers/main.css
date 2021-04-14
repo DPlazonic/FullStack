@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: sans-serif;
+    font-size: 16px;
+}
+button{
+    padding: 10px 40px 10px 40px;
+    font-size: 16px;
+    background-color: #dc572e;
+    border: none;
+    margin-top: 30px;
+    border-radius: 10px;
+    color: white;
+}
+.heading{
+    font-size: 45px;
+}
+.subheading{
+    font-size: 25px;
+    padding: 20px 0px;
+}
+.container{
+    width: 70%;
+    margin: auto;
+    font-size: 16px;
+}
+/************header***************/
+header{
+    background-color: #af1641;
+    text-align: center;
+    color: white;
+    padding: 150px 0 150px 0;
+}
+header h1 {
+    font-size: 100px;
+}
+/***************one***************/
+.one{ 
+ padding: 150px 0px;
+ text-align: center;
+}
+.one button{
+    background: #af1641;
+}
+/***************two***************/
+.two{
+    text-align: center;
+    background-color: #af1641;
+    padding: 150px 0px;
+    color: white;
+    
+}
+.two img{
+    width: 100%;
+    margin-bottom: 30px;   
+}
+
+.two button{
+    background: white;
+    color:#af1641;
+}
+/***************three***************/
+.three{
+    padding: 150px 0px;
+    text-align: center
+}
+.three div{
+    padding: 20px;
+}
+.three .container{
+    display: flex;    
+}
+.three button{
+    background: #af1641;
+}
+/***************footer***************/
+
+footer{
+    background-color: #333;
+    color:white;
+    text-align: center;
+    padding: 50px 0px;
+}
