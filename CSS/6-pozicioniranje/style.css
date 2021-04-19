@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+}
+nav{
+    background: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100% ;
+    padding: 10px 50px;
+
+}
+nav > a{
+    font-size: 30px;
+    text-decoration: none;
+    float: left;
+}
+nav ul{
+    float: right;
+
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 40px;
+}
+section{
+    max-width: 1140px;
+    margin: 100px auto;
+    border: 3px dashed orange;
+    padding: 50px;
+}
+footer{
+    background: orange;
+    text-align: center;
+    padding: 20px;
+}

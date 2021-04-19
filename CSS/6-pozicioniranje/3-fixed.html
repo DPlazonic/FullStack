@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        section{
+            background: lightgreen;
+            width:70%;
+            margin: auto;
+            padding: 100px;
+        }
+        article{
+            background:tomato;
+            width: 600px;
+            color: white;
+            outline: 1px solid black;
+            padding: 80px;
+        }
+        .relative{
+            background: blue;
+            position: relative;         
+        }
+        .fixed{
+            border: 5px solid black;
+            width: 500px;
+            padding: 20px;
+            background: cyan;
+            color: black;
+            position: fixed;
+            right: 0px;
+            bottom: 0px;
+            
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <article>Prvi element</article>
+        <article class="relative">Drugi element
+            <div class="fixed">Fixno pozicioniran div</div>
+        </article>
+        <article>Treći element</article>
+
+    </section>
+</body>
+</html>
