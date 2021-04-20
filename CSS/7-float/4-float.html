@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primjer float</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        header, footer{
+            background: tomato;
+            padding: 30px;
+            text-align: center;
+        }
+        aside{
+            background: lightblue;
+            width: 20%;
+            float:left;
+
+            padding: 30px;
+
+        }
+        section{
+            background: yellowgreen;
+            width: 60%;
+            float:left;
+            height: auto;
+            padding: 30px;
+
+        }
+        .clearfix{
+            clear: both;
+        }
+        main::after{
+            content: "";
+            clear: both;
+            display: block;            
+        }
+        button {
+            background: tomato;
+            padding: 20px;
+            border: none;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Header - zaglavlje sajta</h2>
+    </header>
+    
+    <main>
+        <aside>
+            <h3>Mapa sajta</h3>
+            <ul>
+                <li><a href="">home</a></li>
+                <li><a href="">home</a></li>
+                <li><a href="">home</a></li>
+                <li><a href="">home</a></li>
+                <li><a href="">home</a></li>
+            </ul>
+        </aside>
+        <section>
+            <h2>Tech blog</h2>
+            <hr>
+                <article>
+                    <h3>Cascading Style sheets
+                        <p>Sloba - 20.4.2021.</p>
+                        <img src="img/css-kod.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ex laboriosam molestiae at ut id consectetur similique quasi accusamus dolorem, possimus eum assumenda laborum quis earum quia repellat cum commodi?</p>
+                        <button>Cijeli tekst</button>
+                </article>
+                <article>
+                    <h3>Cascading Style sheets
+                        <p>Sloba - 20.4.2021.</p>
+                        <img src="img/patern-ponavljanje.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ex laboriosam molestiae at ut id consectetur similique quasi accusamus dolorem, possimus eum assumenda laborum quis earum quia repellat cum commodi?</p>
+                        <button>Cijeli tekst</button>
+                </article>
+            </h3>
+        </section>
+        <aside>
+           <h3>kategorije</h3>
+           <ul>
+               <li><a href="">HTML</a></li>
+               <li><a href="">CSS</a></li>
+               <li><a href="">JS</a></li>
+               <li><a href="">PHP</a></li>               <li><a href="">WP</a></li>
+
+
+           </ul>
+        </aside>
+        <div class="clearfix"></div>
+    </main>
+    
+    <footer>
+        <p>Footer - podnozje sajta</p>
+    </footer>
+
+</body>
+</html>
