@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        section {
+            width: 800px;
+            height: 500px;
+            background-image: url(img/slika.jpg);
+            background-size: auto;
+            background-size: cover;
+            background-size: contain;
+            border: 1px solid red;
+            background-repeat: no-repeat;
+        }
+        
+    </style>
+</head>
+<body>
+    <section></section>
+    <h1>Polozaj pozadinske slike</h1>
+    <table cellpaddin="10" border="2">
+            <thead>
+                <th>Kljucna rec</th>
+                <th>Znacenje</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>AUTO</td>
+                    <td>Sirina i visina se racunaju u odnosu na proporcije slike</td>
+                </tr>
+                <tr>
+                    <td>COVER</td>
+                    <td>Slika se povecava i zadrzava proporcije, a pokrica i ceo ekran</td>
+                </tr>
+                <tr>
+                    <td>CONTAIN</td>
+                    <td>Slika zadrzava proporcije ali se povecava i smanjjue tako da se cela nalazi u iunjutar elementa</td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>
