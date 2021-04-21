@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.clearfix{
+    clear:both;
+}
+.logo{
+    width: 10%;
+    height: auto;
+    float: left;
+}
+
+nav ul{
+    float: right;
+}
+nav ul li{
+    list-style: none;
+    padding-left: 50px;
+    display: inline-block;
+    /* float: left; */
+}
+header{
+    border: 2px solid black;
+    background: lightblue;
+    text-align: center;
+}
+footer{
+    background: lightblue;
+    border: 2px solid black;
+    padding: 30px;
+
+
+}
+aside{
+    background: lightblue;
+    border: 2px solid black;
+    width: 40%;
+    float: right;
+    margin-top: 30px;
+    border: 2px solid black;
+    padding: 30px;
+
+
+}
+.mainContent{
+    width: 60%;
+    float: left;
+}
+.mainContent img{
+    float: left;
+    margin-right: 20px;
+}

@@ -1,0 +1,138 @@
+/********
+basic styles
+*********/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-size: 16px;
+}
+.clearfix{
+    clear:both;
+}
+button{
+    border: 4px solid white;
+    background: transparent;
+    color: white;
+    font-size: 17px;
+    padding: 20px 40px;
+    margin: 10px;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+button:hover{
+    background: white;
+    color: #333;
+}
+.container{
+    width:70%;
+    margin: auto;
+
+}
+h2{
+    font-size: 40px;
+}
+/********
+header
+*********/
+header{
+    background-image: url(img/lorikeet-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+
+}
+header nav{
+    width: 90%;
+    padding-top: 50px;
+    margin: auto;
+}
+header nav h1{
+    float:left;
+}
+header nav ul{
+    float:right;
+}
+header nav ul li{
+    display:inline-block;
+    padding-left: 50px;
+}
+header nav h1 a{
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+header h2{
+    padding-top: 200px;
+}
+header article{
+    padding: 200px 0;
+}
+
+header h4{
+    font-size: 25px;
+    color: #ddd;
+    padding: 10px 0px 40px 0px;
+}
+/********
+img
+*********/
+.slika img{
+    width: 100%;
+}
+/**************
+tekst
+**************/
+.tekst {
+    text-align: center;
+}
+.tekst h2, .cta h2 {
+    font-size: 45px;
+}
+.tekst h4 {
+    font-size: 25px;
+    color: gray;
+    padding: 10px 0 30px 0;
+}
+.tekst p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+/**************
+cta
+**************/
+.cta{
+    background: #84a137;
+    padding: 50px 0; 
+    color: white;
+    text-align: center;   
+}
+
+.cta h4 {
+    font-size: 25px;
+    color: white;
+    padding: 10px 0 30px 0;
+}
+.cta p{
+    padding-bottom: 40px;
+    line-height: 1.5;
+}
+/**************
+footer
+**************/
+footer{
+    background: #435120;
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
