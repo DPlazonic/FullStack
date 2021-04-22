@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        body {
+            font-size: 40px;
+        }
+        /* neposecen link */
+        .logo:link {
+            color: green;
+        }
+        /* posecen link */
+        .logo:visited {
+            color: orange;
+        }
+        /* kada stavimo misa preko linka */
+        .logo:hover {
+            color: blueviolet;
+        }
+        /* momenat kada je stisnut link */
+        .logo:active {
+            color: crimson;
+        }
+        .dropdownContent a {
+            display: none;
+        }
+        .dropdown:hover .dropdownContent a {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <a class="logo" href="https://webcon.com" target="_blank">WEBCON web site</a>
+    <section class="dropdown">
+        <a href="">LINKOVI</a>
+        <article class="dropdownContent">
+            <a href="">Link 1</a>
+            <a href="">Link 2</a>
+            <a href="">Link 3</a>
+            <a href="">Link 4</a>
+        </article>
+    </section>
+</body>
+</html>
