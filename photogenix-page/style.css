@@ -357,6 +357,55 @@ pricing
     background: var(--crna);
     color: var(--bela);
 }
+/*******************************
+C O N T A C T
+*******************************/
+/***************
+contact
+***************/
+.contact{
+    padding: var(--padding);
+}
+.contact i {
+    font-size: 2.5rem;
+    color: var(--zelena);
+    margin-top: 10px;
+}
+.contact h2 +p{
+    padding-bottom: 20px;
+}
+.contact h5{
+    font-size: 1.5rem;
+}
+
+.contact form textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid var(--zelena);
+    border-radius: 2px;
+    padding: 10px;
+}
+.contact form input{
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid var(--zelena);
+    border-radius: 2px;
+    padding: 10px;
+}
+.contact ::placeholder{
+    color: var(gray);
+}
+.contact :focus{
+    background: var(--zelena);
+    border: 1px solid var(--zelena)
+
+}
+.contact button{
+    background: var(--zelena);
+}
+.contact button:hover{
+    background: var(--zuta);
+}
 
 /*******************************
 H O M E
