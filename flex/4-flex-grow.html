@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+    
+    .container{
+        width: 920px;
+        outline: 1px solid red;
+        margin: auto;
+    }
+    .row{
+        display: flex;
+    }
+    div{
+        text-align: center;
+        padding: 30px;
+        flex-grow: 1;
+    }
+    .prvi{
+        background: crimson;
+        flex-grow: 2;
+    }
+    .drugi{
+        background: cyan;
+        flex-grow: 8;
+
+    }
+    .treci{
+        background: gold;
+        flex-grow: 2;
+
+    }
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <article class="row">
+            <div class="prvi">Prvi</div>
+            <div class="drugi">Drugi</div>
+            <div class="treci">Treći</div>
+        </article>
+    </section>
+</body>
+</html>

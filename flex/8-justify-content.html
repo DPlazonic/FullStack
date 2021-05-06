@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container {
+            max-width: 900px;
+            width: 100%;
+            outline: 10px solid black;
+            margin: auto;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            justify-content: center;
+            justify-content: flex-end;
+            justify-content: space-between;
+            justify-content: space-evenly;
+        }
+        div {
+            text-align: center;
+            height: 300px;
+            flex: 0 0 150px;
+            
+        }
+        .prvi {
+            background: crimson;
+        }
+        .drugi {
+            background: cyan;
+        }
+        .treci {
+            background:gold;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <article class="row">
+            <div class="prvi">Prvi</div>
+            <div class="drugi">Drugi</div>
+            <div class="treci">Treci</div>
+        </article>
+    </section>
+</body>
+</html>

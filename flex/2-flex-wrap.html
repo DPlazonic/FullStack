@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .row{
+            background: violet;
+            padding: 50px;
+            display: flex;
+            flex-flow: row wrap;
+            /* flex wrap; flex direction */
+        }
+
+        .col{
+            border: 1px solid black;
+            background: orange;
+            padding: 15px;
+            text-align: center;
+            flex: 1 0 200px;
+            /*flex-grow, flex-shrink, flex-basis */
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Flex direction</h1>
+    <hr>
+    <div class="row">
+        <div class="col">1</div>
+        <div class="col">2</div>
+        <div class="col">3</div>
+        <div class="col">4</div>
+        <div class="col">5</div>
+        <div class="col">6</div>
+        <div class="col">7</div>
+        <div class="col">8</div>
+        <div class="col">9</div>
+        <div class="col">10</div>
+        <div class="col">11</div>
+        <div class="col">12</div>
+
+    </div>
+</body>
+</html>
