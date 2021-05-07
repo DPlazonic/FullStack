@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .roditelj {
+            min-width: 600px;
+            background: gold;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        div {
+            border: 1px solid black;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box-1 {
+            background: red;
+            flex: 0 0 640px;
+        }
+        .box-2 {
+            background: blue;
+            flex: 1;
+        }
+        .box-3 {
+            background: green;
+            flex: 1;
+        }
+        .box-4 {
+            background: pink;
+            flex: 2;
+        }
+        img {
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kombinacija flexibile i nefleksibilne sirine itema (dece)</h1>
+    <hr>
+    <section class="roditelj">
+        <div class="box-1">
+            <img src="slika.jpg" alt="">
+        </div>
+        <div class="box-2">Box 2</div>
+        <div class="box-3">Box 3</div>
+        <div class="box-4">Box 4</div>
+    </section>
+</body>
+</html>
