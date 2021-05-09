@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+:root {
+  --fontFamily: "Roboto", sans-serif;
+  --darkBlue: #195db4;
+  --lightBlue: #41a3f4;
+  --white: #ffffff;
+  --fontSize: 16px;
+  --transition: .3s ease;
+  --text: #444444;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fontFamily);
+  font-size: var(--fontSize);
+  line-height: 1.6;
+  color: var(--text);
+  font-weight: 300;
+}
+.container {
+  max-width: 920px;
+  margin: auto;
+  padding: 30px 60px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  transition: var(--transition);
+}
+/******************
+header
+******************/
+header {
+  height: 60vh;
+  background: linear-gradient(140deg,var(--darkBlue), var(--lightBlue));
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px 0 10px;
+  align-items: center;
+}
+header .logo {
+  height: 45px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  margin-left: 10px;
+  padding: 5px 15px;
+}
+nav ul li:hover {
+  background: rgba(255,255,255,0.2);
+  border-radius: 3px;
+}
+nav ul li:first-child:hover {
+  background: transparent;
+}
+nav ul li:first-child {
+  margin-left: 0px;
+}
+nav ul li a {
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+nav div {
+  display: flex;
+  align-items: center;
+}
+nav div input {
+  margin-left: 15px;
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  color: #aaa;
+  width: 170px;
+}
+nav div a {
+  margin-left: 15px;
+  color: var(--white);
+  font-size: 1.5rem;
+}
+header article {
+  display: flex;
+  align-items: center;
+}
+header article div {
+  flex: 1;
+}
+/******************
+section
+******************/
+hr {
+  display: block;
+  content: "";
+  height: 1px;
+  width: 95%;
+  background: lightgray;
+  margin: 20px auto;
+  border: none;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+section img {
+  width: 100%;
+}
+section article:first-child {
+  flex: 0 0 40%;
+}
+section article:last-child {
+  flex: 0 0 55%;
+}
+section h2 {
+  color: var(--lightBlue);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+section p {
+  line-height: 2;
+}
