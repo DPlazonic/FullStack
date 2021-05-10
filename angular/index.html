@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agular</title>
+    <title>Angular</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,11 +17,11 @@
         <nav>
             <ul>
                 <li><a href=""><img class="logo" src="img/logo-nav@2x.png" alt=""></a></li>
-                <li><a href="">Features</a></li>
-                <li><a href="">Docs</a></li>
-                <li><a href="">Resources</a></li>
-                <li><a href="">Events</a></li>
-                <li><a href="">Blog</a></li>
+                <li class="links"><a href="">Features</a></li>
+                <li class="links"><a href="">Docs</a></li>
+                <li class="links"><a href="">Resources</a></li>
+                <li class="links"><a href="">Events</a></li>
+                <li class="links"><a href="">Blog</a></li>
             </ul>
             <div>
                 <input type="search" placeholder="Search">
@@ -41,46 +41,116 @@
         </article>
     </header>
 
-    <section class="container">
-        <article>
-            <img src="img/responsive-framework.svg" alt="">
-        </article>
-        <article>
-            <h2>Develop Across All Platforms</h2>
-            <p>Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop. </p>
-        </article>
-    </section>
-    <hr>
-    <section class="container">
-        <article>
-            <img src="img/responsive-framework.svg" alt="">
-        </article>
-        <article>
-            <h2>Develop Across All Platforms</h2>
-            <p>Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop. </p>
-        </article>
-    </section>
-    <hr>
-    <section class="container">
-        <article>
-            <img src="img/responsive-framework.svg" alt="">
-        </article>
-        <article>
-            <h2>Develop Across All Platforms</h2>
-            <p>Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop. </p>
-        </article>
-    </section>
-    <hr>
-    <section class="container">
-        <article>
-            <img src="img/responsive-framework.svg" alt="">
-        </article>
-        <article>
-            <h2>Develop Across All Platforms</h2>
-            <p>Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop. </p>
-        </article>
-    </section>
-    <hr>
+    <!-- main -->
+    <main>
+        <section>
+            <article class="container">
+                <div>
+                    <img src="img/responsive-framework.svg" alt="">
+                </div>
+                <div>
+                    <h2>Develop Across All Platforms</h2>
+                    <p>Learn one way to build applications with Angular and reuse your code and abilities to build apps for any deployment target. For web, mobile web, native mobile and native desktop. </p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="container">
+                <div>
+                    <img src="img/speed-performance.svg" alt="">
+                </div>
+                <div>
+                    <h2>Speed & Performance</h2>
+                    <p>Achieve the maximum speed possible on the Web Platform today, and take it further, via Web Workers and server-side rendering.
+                    <br>
+                    Angular puts you in control over scalability. Meet huge data requirements by building data models on RxJS, Immutable.js or another push-model. </p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="container">
+                <div>
+                    <img src="img/joyful-development.svg" alt="">
+                </div>
+                <div>
+                    <h2>Incredible Tooling</h2>
+                    <p>Build features quickly with simple, declarative templates. Extend the template language with your own components and use a wide array of existing components. Get immediate Angular-specific help and feedback with nearly every IDE and editor. All this comes together so you can focus on building amazing apps rather than trying to make the code work.  </p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="container">
+                <div>
+                    <img src="img/loved-by-millions.svg" alt="">
+                </div>
+                <div>
+                    <h2>Loved by Millions</h2>
+                    <p>From prototype through global deployment, Angular delivers the productivity and scalable infrastructure that supports Google's largest applications. </p>
+                </div>
+            </article>
+        </section>
+        <a href="" class="try">
+            <div>
+                <img src="/img/code-icon.svg" alt="">
+            </div>
+            <div>
+                <h3>Try it now</h3>
+                <p>Explore Angular's capabilities with a ready-made sample app. No setup required.</p>
+            </div>
+        </a>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div class="row">
+            <div class="col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Resource Listing</a></li>
+                    <li><a href="">Press Kit</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Usage Analytics</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="">Stack Overflow</a></li>
+                    <li><a href="">Join Discord</a></li>
+                    <li><a href="">Gitter</a></li>
+                    <li><a href="">Report Issues</a></li>
+                    <li><a href="">Code of Conduct</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Meetups</a></li>
+                    <li><a href="">Twiiter</a></li>
+                    <li><a href="">Github</a></li>
+                    <li><a href="">Contrubute</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>Languages</h4>
+                <ul>
+                    <li><a href="">Espanol</a></li>
+                    <li><a href="">English</a></li>
+                    <li><a href="">Deutsch</a></li>
+                    <li><a href="">Dutsh</a></li>
+                    <li><a href="">Russian</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>Super-powered by Google ©2010-2021. </p>
+            <p>Code licensed under an MIT-style License. Documentation licensed under CC BY 4.0. </p>
+            <p>Version 11.2.14-local+sha.ed20342404. </p>
+        </div>
+    </footer>
+    
 
 </body>
 

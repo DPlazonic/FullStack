@@ -25,6 +25,10 @@ body {
   max-width: 920px;
   margin: auto;
   padding: 30px 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 }
 ul {
   list-style: none;
@@ -39,9 +43,41 @@ a:hover {
 header
 ******************/
 header {
-  height: 60vh;
+  height: 55vh;
+  position: relative;
+}
+header::before {
   background: linear-gradient(140deg,var(--darkBlue), var(--lightBlue));
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 50%);
+  height: 55vh;
+  width: 100%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: -1;
+  transform: skew(0deg, 7deg);
+  transform-origin: right bottom;
+}
+header h1 {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+header article a {
+  background: var(--white);
+  border-radius: 30px;
+  padding: 10px 40px;
+  margin-top: 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--darkBlue);
+  box-shadow: 0 4px 4px #195db7;
+}
+header article a:hover {
+  text-decoration: underline;
+  background: #f3f3f3;
 }
 nav {
   display: flex;
@@ -100,37 +136,160 @@ header article div {
   flex: 1;
 }
 /******************
-section
+main
 ******************/
-hr {
-  display: block;
-  content: "";
-  height: 1px;
-  width: 95%;
-  background: lightgray;
-  margin: 20px auto;
-  border: none;
-}
-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-section img {
+main section img {
   width: 100%;
 }
-section article:first-child {
+main section article.container div:first-child{
   flex: 0 0 40%;
 }
-section article:last-child {
+main section article.container div:last-child{
   flex: 0 0 55%;
 }
-section h2 {
+main section:nth-child(even) article div:nth-child(1) {
+  order: 1;
+}
+main section h2 {
   color: var(--lightBlue);
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1.4rem;
 }
-section p {
+main section p {
   line-height: 2;
+}
+main section:nth-child(4) {
+  border: none;
+}
+main section {
+  border-bottom: 1px solid lightgray;
+  margin: auto;
+  width: 95%;
+}
+.try {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  margin: 30px auto;
+  box-shadow: 0 2px 25px lightgray;
+  padding: 40px;
+}
+.try:hover {
+  box-shadow: 0 2px 10px lightgray;
+  text-decoration: underline;
+}
+.try div:first-child {
+  flex: 0 0 20%;
+}
+.try div:last-child {
+  flex: 0 0 80%;
+}
+.try img {
+  width: 80%;
+}
+.try h3 {
+  color: var(--lightBlue);
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+.try p {
+  color: var(--text);
+  line-height: 2;
+}
+/******************
+footer
+******************/
+footer {
+  background: #1976d2;
+  position: relative;
+  padding: 80px 0;
+  color: var(--white);
+}
+footer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(img/angular_whiteTransparent_withMargin.png) top 0 left 0, url(img/angular_whiteTransparent_withMargin.png) top 80px left 160px;
+  opacity: .08;
+  background-size: 320px auto;
+}
+footer .row {
+  width: 35%;
+  margin: auto;
+  line-height: 2.5;
+}
+footer .row:first-child {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer a {
+  color: var(--white);
+}
+footer .row:last-child {
+  text-align: center;
+  margin-top: 35px;
+}
+footer h4 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+/******************
+R E S P O N S I V E
+******************/
+@media(max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  .links {
+    display: none;
+  }
+  header article.container div {
+    flex: 0 0 100%;
+  }
+  header {
+    height: 90vh;
+    text-align: center;
+  }
+  header::before {
+    height: 83vh;
+    transform: skew(0deg, 0deg);
+  }
+  header h1 {
+      font-size: 1.5rem;
+  }
+  .container {
+    width: 95%;
+    padding: 20px;
+  }
+  main section article.container div:first-child,
+  main section article.container div:last-child {
+    flex: 0 0 100%;
+  }
+  main section:nth-child(even) article div:nth-child(1) {
+    order: 0;
+  }
+  .try {
+    width: 90%;
+    padding: 20px;
+  }
+  footer .row {
+    width: 70%;
+    margin: auto;
+    line-height: 2.5;
+  }
+  footer .row .col {
+    flex:  0 0 100%;
+    margin-bottom: 30px;
+  }
 }
