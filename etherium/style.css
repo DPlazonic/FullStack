@@ -1,14 +1,16 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;600;&display=swap');
 :root {
     --headings: #333333;
     --text: #666666;
     --violet: #d2d2f9;
     --tirkiz: #ccfcff;
+    --lightblue: #e1fefa;
     --orange: #ffe3d3;
     --pink: #ffe5f9;
     --gray: #e8e8fc;
     --blue: #1c1ce1;
+    --white: #fff;
     --lightgray: #fcfcfc;
     --fontSize: 16px;
     --padding: 50px 0;
@@ -43,6 +45,12 @@ h1, h2, h3, h4, h5 ,h6 {
     align-items: center;
     flex-wrap: wrap;
 }
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
 ul {
     list-style: none;
 }
@@ -51,13 +59,23 @@ a:hover {
 }
 button {
     padding: 10px;
-    font-size: 1rem;
+    font-size: .9rem;
     cursor: pointer;
     border-radius: 5px;
-    transition: var(--transition);
+    transition: .1s ease;
+    font-weight: 300;
+    letter-spacing: 1px;
 }
 .btnBlue {
-
+    background: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--blue);
+    margin-right: 10px;
+}
+.btnBlue:hover {
+    border: 1px solid var(--blue);
+    box-shadow: 3px 3px var(--violet);
+    opacity: .9;
 }
 .btnTransparent {
     background: transparent;
@@ -67,6 +85,11 @@ button {
     border: 1px solid var(--blue);
     box-shadow: 3px 3px var(--violet);
     color: var(--blue);
+}
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 30px;
 }
 /*************
 nav
@@ -148,4 +171,111 @@ welcome
 .welcome p {
     padding: 30px;
     font-size: 1.2rem;
+}
+/*************
+getStarted
+*************/
+.getStarted {
+    padding: var(--padding);
+    background: var(--lightgray);
+}
+.getStarted img {
+    width: 100%;
+}
+.getStarted article {
+    flex: 0 0 48%;
+}
+.getStarted article:first-child {
+    padding: 120px;
+}
+.getStarted p {
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+}
+/*************
+cards
+*************/
+.cards {
+    padding: 50px;
+    background: var(--lightgray);
+    border-bottom: 1px solid var(--headings);
+}
+.cards a {
+    flex: 0 0 49%;
+    text-decoration: none;
+    border: 1px solid var(--headings);
+    box-shadow: 4px 4px var(--violet);
+    min-height: 430px;
+    transition: .1s ease-in-out;
+    margin-bottom: 30px;
+    overflow: auto;
+}
+.cards a:hover {
+    box-shadow: 0 0 30px lightgray;
+    transform: scale(102%);
+    border-radius: 3px;
+    background: #f7f7f7;
+}
+.cards article .img {
+    background: rgba(0, 0, 0, 0) radial-gradient(46.28% 66.31% at 66.95% 58.35%, rgb(230, 230, 247) 0%, rgb(231, 237, 250) 50%, rgb(233, 251, 250) 100%) repeat scroll 0% 0%;
+    min-height: 260px;
+}
+.cards .text {
+    padding: 30px 30px 0 30px;
+}
+.cards h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+.cards p {
+    color: var(--text);
+    font-weight: 400;
+}
+/*************
+colors
+*************/
+.colors {
+    border-bottom: 1px solid var(--headings);
+    padding: var(--padding);
+}
+.colors img {
+    width: 100%;
+}
+.colors article {
+    flex: 0 0 49%;
+}
+.colors .text {
+    padding: 100px;
+}
+.colors p {
+    padding-bottom: 30px;
+    font-size: 1.2rem;
+}
+.colors h2 {
+    font-family: serif;
+    font-weight: 600;
+}
+.colors:nth-child(odd) .text {
+    order: -1;
+}
+/* .colors:nth-child(odd) article:nth-child(1) {
+    order: 0;
+}
+.colors:nth-child(odd) article:nth-child(2) {
+    order: -1;
+} */
+.tirkiz {
+    background: var(--tirkiz);
+}
+.orange {
+    background: var(--orange);
+}
+.lightblue {
+    background: var(--lightblue);
+}
+.pink {
+    background: var(--pink);
+}
+.gray {
+    background: var(--gray);
 }
