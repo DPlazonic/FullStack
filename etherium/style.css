@@ -45,9 +45,9 @@ h1, h2, h3, h4, h5 ,h6 {
     align-items: center;
     flex-wrap: wrap;
 }
-.flexCenter {
+.flexEvenly  {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: flex-end;
     flex-wrap: wrap;
 }
@@ -200,7 +200,8 @@ cards
     background: var(--lightgray);
     border-bottom: 1px solid var(--headings);
 }
-.cards a {
+.cards a,
+.explore a {
     flex: 0 0 49%;
     text-decoration: none;
     border: 1px solid var(--headings);
@@ -210,24 +211,29 @@ cards
     margin-bottom: 30px;
     overflow: auto;
 }
-.cards a:hover {
+.cards a:hover,
+.explore a:hover {
     box-shadow: 0 0 30px lightgray;
     transform: scale(102%);
     border-radius: 3px;
     background: #f7f7f7;
 }
-.cards article .img {
+.cards article .img,
+.explore article .img {
     background: rgba(0, 0, 0, 0) radial-gradient(46.28% 66.31% at 66.95% 58.35%, rgb(230, 230, 247) 0%, rgb(231, 237, 250) 50%, rgb(233, 251, 250) 100%) repeat scroll 0% 0%;
     min-height: 260px;
 }
-.cards .text {
+.cards .text,
+.explore .text {
     padding: 30px 30px 0 30px;
 }
-.cards h3 {
+.cards h3,
+.explore h3 {
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
-.cards p {
+.cards p,
+.explore p {
     color: var(--text);
     font-weight: 400;
 }
@@ -278,4 +284,171 @@ colors
 }
 .gray {
     background: var(--gray);
+}
+.gray article:first-child{
+    border: 1px solid var(--headings);
+    background: var(--white);
+    flex: 0 0 42%;
+    box-shadow: 4px 4px var(--violet);
+}
+.gray article:last-child{
+    flex: 0 0 42%;
+}
+.gray .head{
+    border-bottom: 1px solid lightgrey;
+    background: #f7f7f7;
+    padding: 15px 10px;
+}
+.gray .head .color{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+}
+.gray .head .color:nth-child(1){
+     background: #d46666;
+}
+.gray .head .color:nth-child(2){
+    background: #ffe78e;
+}
+.gray .head .color:nth-child(3){
+    background: #6fc4a0;
+}
+.gray a {
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid lightgray;
+    padding:15px;
+    color: var(--text);
+    font-weight: 300;
+    transition: .1s ease-in-out;
+}
+.gray a:hover{
+    background: var(--violet);
+}
+.gray a p {
+    padding-bottom: 0;
+    font-size: 0.9rem;
+    color: #929292;
+
+}
+.gray a h5{
+    font-size: 1rem;
+    font-weight: 300;
+} 
+/*********
+today
+*********/
+.today{
+    padding: 80px 50px;
+    background: var(--lightgray);
+}
+.today h3{
+    font-weight: 400;
+}
+.today .col{
+    flex:  0 0 50%;
+    border: 1px solid var(--headings);
+    min-height:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+.today > p{
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+}
+.today span{
+    font-size: 4rem;
+    color: var(--headings);
+    font-weight: 600;
+}
+.today .col h3 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.today a {
+    color: var(--headings);
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    border: 2px solid var(--headings);
+    border-radius: 50%;
+    position: relative;
+    top: -5px;
+    left: 15px;
+}
+.today a:hover{
+    color: var(--blue);
+    border: 2px solid var(--blue);
+}
+/*************
+explore
+*************/
+.explore {
+    padding: 80px 50px;
+}
+.explore a {
+    flex: 0 0 32%;
+}
+.explore h2 {
+    width: 100%;
+}
+/*********
+contribute
+*********/
+.contribute{
+    background: linear-gradient(
+        60deg,
+        var(--gray),
+        var(--gray),
+        var(--gray), 
+        var(--lightblue)
+    );
+}
+.contribute article:first-child{
+    flex: 0 0 55%;
+    padding: 50px 100px;
+
+}
+.contribute article:last-child{
+    flex: 0 0 40%;
+}
+.contribute img{
+    width: 95%;
+}
+.contribute p{
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.8;
+}
+/*********
+footer
+*********/
+footer{
+    padding: var(--padding);
+}
+footer article:first-child a{
+    color: #b2b2b2;
+    font-size: 2rem;
+    margin-left: 10px;
+}
+footer article:last-child{
+    margin-top: 30px;
+}
+footer article:last-child a{
+    text-decoration: none;
+    color: var(--text);
+    line-height: 2;
+}
+footer article:last-child h5{
+    font-size: .9rem;
+}
+footer article:last-child a:hover{
+   color: var(--blue); 
 }
