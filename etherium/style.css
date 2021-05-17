@@ -45,10 +45,16 @@ h1, h2, h3, h4, h5 ,h6 {
     align-items: center;
     flex-wrap: wrap;
 }
-.flexEvenly  {
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+.flexEvenly {
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-end;
+    align-items: center;
     flex-wrap: wrap;
 }
 ul {
@@ -285,82 +291,80 @@ colors
 .gray {
     background: var(--gray);
 }
-.gray article:first-child{
+.gray article:first-child {
     border: 1px solid var(--headings);
     background: var(--white);
     flex: 0 0 42%;
     box-shadow: 4px 4px var(--violet);
 }
-.gray article:last-child{
+.gray article:last-child {
     flex: 0 0 42%;
 }
-.gray .head{
-    border-bottom: 1px solid lightgrey;
+.gray .head {
+    border-bottom: 1px solid lightgray;
     background: #f7f7f7;
     padding: 15px 10px;
 }
-.gray .head .color{
+.gray .head .color {
+    display: inline-block;
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    display: inline-block;
     margin-right: 5px;
 }
-.gray .head .color:nth-child(1){
-     background: #d46666;
+.gray .head .color:nth-child(1) {
+    background: #d46666;
 }
-.gray .head .color:nth-child(2){
+.gray .head .color:nth-child(2) {
     background: #ffe78e;
 }
-.gray .head .color:nth-child(3){
-    background: #6fc4a0;
+.gray .head .color:nth-child(3) {
+    background: #6fc4a0;   
 }
 .gray a {
     text-decoration: none;
     display: block;
     border-bottom: 1px solid lightgray;
     padding:15px;
-    color: var(--text);
     font-weight: 300;
     transition: .1s ease-in-out;
 }
-.gray a:hover{
+.gray a:hover {
     background: var(--violet);
 }
 .gray a p {
     padding-bottom: 0;
-    font-size: 0.9rem;
+    font-size: .9rem;
     color: #929292;
-
 }
-.gray a h5{
+.gray a h5 {
     font-size: 1rem;
     font-weight: 300;
-} 
-/*********
+}
+/*************
 today
-*********/
-.today{
+*************/
+.today {
     padding: 80px 50px;
     background: var(--lightgray);
 }
-.today h3{
+.today h3 {
     font-weight: 400;
 }
-.today .col{
-    flex:  0 0 50%;
+.today .col {
+    flex: 0 0 50%;
     border: 1px solid var(--headings);
-    min-height:300px;
+    min-height: 330px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 30px;
 }
-.today > p{
+.today > p {
     margin-bottom: 50px;
     font-size: 1.2rem;
 }
-.today span{
+.today span {
     font-size: 4rem;
     color: var(--headings);
     font-weight: 600;
@@ -382,7 +386,7 @@ today
     top: -5px;
     left: 15px;
 }
-.today a:hover{
+.today a:hover {
     color: var(--blue);
     border: 2px solid var(--blue);
 }
@@ -398,57 +402,144 @@ explore
 .explore h2 {
     width: 100%;
 }
-/*********
+/*************
 contribute
-*********/
-.contribute{
-    background: linear-gradient(
-        60deg,
-        var(--gray),
-        var(--gray),
-        var(--gray), 
-        var(--lightblue)
-    );
+*************/
+.contribute {
+    background: linear-gradient(60deg, var(--gray),var(--gray),var(--gray), var(--lightblue));
 }
-.contribute article:first-child{
+.contribute article:first-child {
     flex: 0 0 55%;
     padding: 50px 100px;
-
 }
-.contribute article:last-child{
+.contribute article:last-child {
     flex: 0 0 40%;
 }
-.contribute img{
+.contribute img {
     width: 95%;
 }
-.contribute p{
+.contribute p {
     margin-bottom: 30px;
     font-size: 1.2rem;
     font-weight: 300;
     line-height: 1.8;
 }
-/*********
+/*************
 footer
-*********/
-footer{
+*************/
+footer {
     padding: var(--padding);
 }
-footer article:first-child a{
+footer article:first-child a {
     color: #b2b2b2;
     font-size: 2rem;
     margin-left: 10px;
 }
-footer article:last-child{
+footer article:last-child {
     margin-top: 30px;
 }
-footer article:last-child a{
+footer article:last-child a {
     text-decoration: none;
     color: var(--text);
     line-height: 2;
+    font-weight: 300;
 }
-footer article:last-child h5{
+footer article:last-child h5 {
     font-size: .9rem;
 }
-footer article:last-child a:hover{
-   color: var(--blue); 
+footer article:last-child a:hover {
+    color: var(--blue);
 }
+/*********************
+R E S P O N S I V E
+*********************/
+@media(max-width:768px) {
+    .getStarted.flexBetween,
+    .cards.flexBetween,
+    .colors.flexBetween,
+    .flexEvenly,
+    footer.flexBetween {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin-left: 0px;
+    }
+    .listItem {
+        display: none;
+    }
+    nav .sun,
+    nav .language,
+    nav input {
+        display: none;
+    }
+    nav ul img {
+        padding-left: 30px;
+    }
+    .welcome h1 {
+        font-size: 2.3rem;
+        line-height: 1.3;
+    }
+    .getStarted article:first-child {
+        padding: 20px;
+    }
+    .cards {
+        padding: 20px;
+    }
+    .cards a, .explore a {
+        flex: 0 0 100%;
+    }
+    .colors .text {
+        padding: 20px;
+    }
+    .btnBlue {
+        margin-bottom: 20px;
+    }
+    .colors:nth-child(odd) .text {
+        order: 0;
+    }
+    .flexEvenly {
+        flex-direction: column;
+    }
+    .gray article:first-child {
+        flex: 0 0 100%;
+    }
+    .gray article:last-child {
+        flex: 0 0 100%;
+        order: -1;
+    }
+    .gray {
+        padding: 20px;
+    }
+    .today {
+        padding: 30px 0px;
+        background: var(--lightgray);
+    }
+    .today .col {
+        flex: 0 0 100%;
+        padding: 30px;
+    }
+    .explore {
+        padding: 40px 20px;
+    }
+    .contribute {
+        width: 90%;
+        margin: auto;
+    }
+    .contribute article:first-child {
+        flex: 0 0 90%;
+        padding: 40px 20px;
+    }
+    .contribute article:last-child {
+        flex: 0 0 90%;
+        order: -1;
+    }
+    footer {
+        padding: 20px;
+    }
+    footer article:last-child div{
+        flex: 0 0 50%;
+    }
+}
+
+
+

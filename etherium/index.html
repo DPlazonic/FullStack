@@ -14,19 +14,20 @@
     <nav class="container flexBetween">
         <ul class="flexBetween">
             <li><a href=""><img src="img/eth-home-icon.png" alt=""></a></li>
-            <li><a href="">Use Etherium&nbsp;<i class="fas fa-angle-down"></i></a></li>
-            <li><a href="">Learn&nbsp;<i class="fas fa-angle-down"></i></a></li>
-            <li><a href="">Developers&nbsp;<i class="fas fa-angle-down"></i></a></li>
-            <li><a href="">Enterprise&nbsp;<i class="fas fa-angle-down"></i></a></li>
-            <li><a href="">Community&nbsp;<i class="fas fa-angle-down"></i></a></li>
+            <li class="listItem"><a href="">Use Etherium&nbsp;<i class="fas fa-angle-down"></i></a></li>
+            <li class="listItem"><a href="">Learn&nbsp;<i class="fas fa-angle-down"></i></a></li>
+            <li class="listItem"><a href="">Developers&nbsp;<i class="fas fa-angle-down"></i></a></li>
+            <li class="listItem"><a href="">Enterprise&nbsp;<i class="fas fa-angle-down"></i></a></li>
+            <li class="listItem"><a href="">Community&nbsp;<i class="fas fa-angle-down"></i></a></li>
         </ul>
         <article class="flexBetween">
             <form>
                 <input type="search" placeholder="Search">
                 <i class="fas fa-search"></i>
             </form>
-            <a href=""><i class="fas fa-sun"></i></a>
-            <a href=""><i class="fas fa-globe"></i>Languages</a>
+            <a class="sun"  href=""><i class="fas fa-sun"></i></a>
+            <a class="language" href=""><i class="fas fa-globe"></i>Languages</a>
+            <a href=""><i class="fa fa-bars"></i></a>
         </article>
     </nav>
 
@@ -151,7 +152,7 @@
     </section>
 
     <!-- colors gray -->
-    <section class="colors gray container flexBetween">
+    <section class="colors gray container flexEvenly">
         <article>
             <div class="head flexBetween">
                 <div class="item">
@@ -190,7 +191,7 @@
             <button class="btnBlue">Developer portal</button>
         </article>
     </section>
-    
+
     <!-- today -->
     <section class="today container">
         <h2>Ethereum today</h2>
@@ -236,147 +237,150 @@
             </div>
         </article>
     </section>
-<!-- explore -->
-<section class="explore container flexBetween">
-    <h2>Explore ethereum.org</h2>
-    <a href="">
+
+    <!-- explore -->
+    <section class="explore container flexBetween">
+        <h2>Explore ethereum.org</h2>
+        <a href="">
+            <article>
+                <div class="img flexCenter">
+                    <img src="img/merge.png" alt="">
+                </div>
+                <div class="text">
+                    <h3>Pick a wallet</h3>
+                    <p>A wallet lets you connect to Ethereum and manage your funds.</p>
+                </div>
+            </article>
+        </a>
+        <a href="">
+            <article>
+                <div class="img flexCenter">
+                    <img src="img/eth.png" alt="">
+                </div>
+                <div class="text">
+                    <h3>Get ETH</h3>
+                    <p>ETH is the currency of Ethereum – you can use it in applications.</p>
+                </div>
+            </article>
+        </a>
+        <a href="">
+            <article>
+                <div class="img flexCenter">
+                    <img src="img/enterprise-eth.png" alt="">
+                </div>
+                <div class="text">
+                    <h3>Use a dapp</h3>
+                    <p>Dapps are applications powered by Ethereum. See what you can do.</p>
+                </div>
+            </article>
+        </a>
+    </section>
+
+    <!-- contribute -->
+    <section class="container contribute flexEvenly">
         <article>
-            <div class="img flexCenter">
-                <img src="img/merge.png" alt="">
+            <h2>Contribute to ethereum.org</h2>
+            <p>This website is open source with hundreds of community contributors. You can propose edits to any of the content on this site, suggest awesome new features, or help us squash bugs. </p>
+            <button class="btnBlue">More on contributing</button>
+            <button class="btnTransparent"><i class="fab fa-github"></i>&nbsp;Github</button>
+        </article>
+        <article>
+            <img src="img/finance_transparent.png" alt="">
+        </article>
+    </section>
+
+    <!-- footer -->
+    <footer class="container">
+        <article class="flexBetween">
+            <p>Website last updated: May 11, 2021</p>
+            <p>
+                <a href=""><i class="fab fa-github"></i></a>
+                <a href=""><i class="fab fa-discord"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-youtube"></i></a>
+            </p>
+        </article>
+        <article class="flexBetween">
+            <div>
+                <h5>Use Etherium</h5>
+                <ul>
+                    <li><a href="">Item 1</a></li>
+                    <li><a href="">Item 2</a></li>
+                    <li><a href="">Item 3</a></li>
+                    <li><a href="">Item 4</a></li>
+                    <li><a href="">Item 5</a></li>
+                    <li><a href="">Item 6</a></li>
+                    <li><a href="">Item 7</a></li>
+                    <li><a href="">Item 8</a></li>
+                </ul>
             </div>
-            <div class="text">
-                <h3>Pick a wallet</h3>
-                <p>A wallet lets you connect to Ethereum and manage your funds.</p>
+            <div>
+                <h5>Learn</h5>
+                <ul>
+                    <li><a href="">Item 1</a></li>
+                    <li><a href="">Item 2</a></li>
+                    <li><a href="">Item 3</a></li>
+                    <li><a href="">Item 4</a></li>
+                    <li><a href="">Item 5</a></li>
+                    <li><a href="">Item 6</a></li>
+                    <li><a href="">Item 7</a></li>
+                    <li><a href="">Item 8</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Developers</h5>
+                <ul>
+                    <li><a href="">Item 1</a></li>
+                    <li><a href="">Item 2</a></li>
+                    <li><a href="">Item 3</a></li>
+                    <li><a href="">Item 4</a></li>
+                    <li><a href="">Item 5</a></li>
+                    <li><a href="">Item 6</a></li>
+                    <li><a href="">Item 7</a></li>
+                    <li><a href="">Item 8</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Ecosystem</h5>
+                <ul>
+                    <li><a href="">Item 1</a></li>
+                    <li><a href="">Item 2</a></li>
+                    <li><a href="">Item 3</a></li>
+                    <li><a href="">Item 4</a></li>
+                    <li><a href="">Item 5</a></li>
+                    <li><a href="">Item 6</a></li>
+                    <li><a href="">Item 7</a></li>
+                    <li><a href="">Item 8</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Enterprise</h5>
+                <ul>
+                    <li><a href="">Item 1</a></li>
+                    <li><a href="">Item 2</a></li>
+                    <li><a href="">Item 3</a></li>
+                    <li><a href="">Item 4</a></li>
+                    <li><a href="">Item 5</a></li>
+                    <li><a href="">Item 6</a></li>
+                    <li><a href="">Item 7</a></li>
+                    <li><a href="">Item 8</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>About</h5>
+                <ul>
+                    <li><a href="">Item 1</a></li>
+                    <li><a href="">Item 2</a></li>
+                    <li><a href="">Item 3</a></li>
+                    <li><a href="">Item 4</a></li>
+                    <li><a href="">Item 5</a></li>
+                    <li><a href="">Item 6</a></li>
+                    <li><a href="">Item 7</a></li>
+                    <li><a href="">Item 8</a></li>
+                </ul>
             </div>
         </article>
-    </a>
-    <a href="">
-        <article>
-            <div class="img flexCenter">
-                <img src="img/eth.png" alt="">
-            </div>
-            <div class="text">
-                <h3>Get ETH</h3>
-                <p>ETH is the currency of Ethereum – you can use it in applications.</p>
-            </div>
-        </article>
-    </a>
-    <a href="">
-        <article>
-            <div class="img flexCenter">
-                <img src="img/enterprise-eth.png" alt="">
-            </div>
-            <div class="text">
-                <h3>Use a dapp</h3>
-                <p>Dapps are applications powered by Ethereum. See what you can do.</p>
-            </div>
-        </article>
-    </a>
-</section>
- <!-- contribute -->
- <section class="container contribute flexEvenly">
-    <article>
-        <h2>Contribute to ethereum.org</h2>
-        <p>This website is open source with hundreds of community contributors. You can propose edits to any of the content on this site, suggest awesome new features, or help us squash bugs.</p>
-        <button class="btnBlue">More on contributing</button>
-        <button class="btnTransparent"><i class="fab fa-github"></i>&nbsp;Github</button>
-    </article>
-    <article>
-        <img src="img/finance_transparent.png" alt="">
-    </article>
-</section>
-<!-- footer -->
-<footer class="container">
-    <article class="flexBetween">
-        <p>Website last updated: May 11, 2021</p>
-        <p>
-            <a href=""><i class="fab fa-github"></i></a>
-            <a href=""><i class="fab fa-discord"></i></a>
-            <a href=""><i class="fab fa-twitter"></i></a>
-            <a href=""><i class="fab fa-youtube"></i></a>
-        </p>
-    </article>
-    <article class="flexBetween">
-        <div>
-            <h5>Use Etherium</h5>
-            <ul>
-                <li><a href="">Item 1</a></li>
-                <li><a href="">Item 2</a></li>
-                <li><a href="">Item 3</a></li>
-                <li><a href="">Item 4</a></li>
-                <li><a href="">Item 5</a></li>
-                <li><a href="">Item 6</a></li>
-                <li><a href="">Item 7</a></li>
-                <li><a href="">Item 8</a></li>
-            </ul>
-        </div>
-        <div>
-            <h5>Learn</h5>
-            <ul>
-                <li><a href="">Item 1</a></li>
-                <li><a href="">Item 2</a></li>
-                <li><a href="">Item 3</a></li>
-                <li><a href="">Item 4</a></li>
-                <li><a href="">Item 5</a></li>
-                <li><a href="">Item 6</a></li>
-                <li><a href="">Item 7</a></li>
-                <li><a href="">Item 8</a></li>
-            </ul>
-        </div>
-        <div>
-            <h5>Developers</h5>
-            <ul>
-                <li><a href="">Item 1</a></li>
-                <li><a href="">Item 2</a></li>
-                <li><a href="">Item 3</a></li>
-                <li><a href="">Item 4</a></li>
-                <li><a href="">Item 5</a></li>
-                <li><a href="">Item 6</a></li>
-                <li><a href="">Item 7</a></li>
-                <li><a href="">Item 8</a></li>
-            </ul>
-        </div>
-        <div>
-            <h5>Ecosystem</h5>
-            <ul>
-                <li><a href="">Item 1</a></li>
-                <li><a href="">Item 2</a></li>
-                <li><a href="">Item 3</a></li>
-                <li><a href="">Item 4</a></li>
-                <li><a href="">Item 5</a></li>
-                <li><a href="">Item 6</a></li>
-                <li><a href="">Item 7</a></li>
-                <li><a href="">Item 8</a></li>
-            </ul>
-        </div>
-        <div>
-            <h5>Enterprise</h5>
-            <ul>
-                <li><a href="">Item 1</a></li>
-                <li><a href="">Item 2</a></li>
-                <li><a href="">Item 3</a></li>
-                <li><a href="">Item 4</a></li>
-                <li><a href="">Item 5</a></li>
-                <li><a href="">Item 6</a></li>
-                <li><a href="">Item 7</a></li>
-                <li><a href="">Item 8</a></li>
-            </ul>
-        </div>
-        <div>
-            <h5>About</h5>
-            <ul>
-                <li><a href="">Item 1</a></li>
-                <li><a href="">Item 2</a></li>
-                <li><a href="">Item 3</a></li>
-                <li><a href="">Item 4</a></li>
-                <li><a href="">Item 5</a></li>
-                <li><a href="">Item 6</a></li>
-                <li><a href="">Item 7</a></li>
-                <li><a href="">Item 8</a></li>
-            </ul>
-        </div>
-    </article>
-</footer>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="js/main.js"></script>
