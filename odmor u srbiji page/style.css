@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@200;400;700&display=swap');
+:root {
+    --primaryColor: #455360;
+    --secondaryColor: #fb795b;
+    --white: #fff;
+    --font: 'Nunito', sans-serif;
+    --fontSize: 16px;
+    --logoFont: 'Great Vibes', cursive;
+    --transition: .3s ease;
+}
+body {
+    font-size: var(--fontSize);
+    color: var(--primaryColor);
+}
+h1, h2, h3, h4 {
+    font-weight: 700;
+}
+.button{
+    background: var(--secondaryColor);
+    text-decoration: none;
+    color: var(--white);
+    padding: 15px 40px;
+    font-size: 1rem;
+    transition: var(--transition);
+    display: inline-block;
+    margin-top: 10px;
+}
+.button:hover{
+    text-decoration: none;
+    background: var(--primaryColor);
+    color: var(--white);
+}
+/* topBar */
+
+.topBar{
+    background: var(--primaryColor);
+}
+.topBar a{
+    color: var(--white);
+}
+.topBar a:hover{
+    color: var(--secondaryColor);
+    transition:var(--transition);
+}
+.topBar .fas{
+    color: var(--secondaryColor);
+}
+/* nav */
+.navbar{
+    background: var(--secondaryColor);
+}
+.navbar-brand{
+    font-size: 2rem;
+    font-family: var(--logoFont);
+    color: var(--primaryColor);
+}
+.navbar-brand:hover{
+    color: var(--white) ;
+}
+.nav-link{
+    color: var(--primaryColor);
+    text-transform: uppercase;
+}
+.nav-link:hover{
+    color: var(--white);
+    transition: var(--transition);
+
+}
+.active .nav-link{
+    color: var(--white);
+}
+/* header */
+header {
+    background-image: url(img/header.png);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    position: relative;
+}
+header article {
+    position: absolute;
+    right: 15%;
+    border-right: 10px solid var(--secondaryColor);
+    background: var(--white);
+    padding: 100px;
+}
