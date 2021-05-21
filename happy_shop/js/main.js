@@ -1,14 +1,14 @@
-$(document).ready(function(){
-    $(".owl-carousel").owlCarousel();
-  });
+$('.carousel').carousel({
+    interval: 5000
+})
 
-  $('.owl-carousel').owlCarousel({
+$('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
-    dots:false,
-    autoplay:true,
-    autoplayTimeout:3000,
+    dots: false,
+    autoplay: true,
+    autoplayTimeout: 3000,
     responsive:{
         0:{
             items:1
