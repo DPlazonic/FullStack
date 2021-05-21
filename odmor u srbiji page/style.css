@@ -11,6 +11,7 @@
 body {
     font-size: var(--fontSize);
     color: var(--primaryColor);
+    font-family: var(--font)
 }
 h1, h2, h3, h4 {
     font-weight: 700;
@@ -79,8 +80,113 @@ header {
 }
 header article {
     position: absolute;
-    right: 15%;
+    right: 10%;
     border-right: 10px solid var(--secondaryColor);
     background: var(--white);
     padding: 100px;
+}
+/* main */
+
+/* widget */
+
+.widget{
+    border: 1px solid var(--primaryColor);
+
+}
+.widget h3{
+    background: var(--secondaryColor);
+    color: var(--white);
+}
+.widget ul li a{
+    color: var(--primaryColor);
+    text-decoration: none;
+    border-bottom: 2px solid var(--secondaryColor);
+    display: block;
+    margin-bottom: 5px;
+    transition: var(--transition);
+}
+.widget ul li a:hover{
+    background: var(--secondaryColor);
+    color: var(--white);
+    padding-left: 30px;
+}
+/* post */
+.post .text{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: -100px;
+    background: var(--white);
+    border-bottom: 6px solid var(--secondaryColor);
+}
+.post h2{
+    color: var(--secondaryColor);
+    font-size: 2.5rem;
+    text-shadow: 0 0 1px var(--primaryColor);
+}
+/* footer */
+footer{
+    background: var(--secondaryColor);
+}
+footer p{
+    background: var(--primaryColor);
+}
+
+/* bottomBar */
+.bottombar{
+    background: var(--primaryColor);
+    border-bottom: 15px solid var(--secondaryColor);
+}
+.bottombar p{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) and (max-width: 1025px){
+    header h1{
+        font-size: 2rem !important;
+    }
+    header{
+        background-position: center left;
+        height: 80vh;
+        bottom: 5%;
+    }
+    header article{
+        right: 0%;
+        bottom: 0;
+        padding: 50px;
+        background: (255,255,255,.8);
+    }
+}
+@media(max-width: 767px){
+    
+    header h1{
+        font-size: 2rem !important;
+        
+    }
+    header{
+        background-position: left;
+        height: 80vh;
+    }
+    header article{
+        right: 0%;
+        bottom: 0;
+        padding: 50px;
+        background: (255,255,255,.8);
+    }
+    .main .col-md-4{
+        order: 2;
+    }
+    .main .col-md-8{
+        order: 1;
+    }
+    
+    .post .text{
+        padding: 10px !important;
+        width: 90%;
+        top: -50px;
+    }
+
+
 }
