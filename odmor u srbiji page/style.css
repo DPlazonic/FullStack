@@ -11,64 +11,63 @@
 body {
     font-size: var(--fontSize);
     color: var(--primaryColor);
-    font-family: var(--font)
+    font-family: var(--font);
 }
 h1, h2, h3, h4 {
     font-weight: 700;
 }
-.button{
+.button {
     background: var(--secondaryColor);
     text-decoration: none;
     color: var(--white);
-    padding: 15px 40px;
     font-size: 1rem;
+    padding: 15px 40px;
     transition: var(--transition);
-    display: inline-block;
     margin-top: 10px;
+    display: inline-block;
 }
-.button:hover{
+.button:hover {
     text-decoration: none;
     background: var(--primaryColor);
     color: var(--white);
 }
-/* topBar */
-
-.topBar{
+/* topbar */
+.topbar {
     background: var(--primaryColor);
 }
-.topBar a{
+.topbar a {
     color: var(--white);
 }
-.topBar a:hover{
+.topbar a:hover {
     color: var(--secondaryColor);
-    transition:var(--transition);
+    transition: var(--transition);
 }
-.topBar .fas{
+.topbar .fas {
     color: var(--secondaryColor);
 }
 /* nav */
-.navbar{
-    background: var(--secondaryColor);
+.navbar {
+    background: var(--secondaryColor) !important;
 }
-.navbar-brand{
-    font-size: 2rem;
+.navbar-brand {
     font-family: var(--logoFont);
+    font-size: 2rem;
     color: var(--primaryColor);
 }
-.navbar-brand:hover{
-    color: var(--white) ;
-}
-.nav-link{
-    color: var(--primaryColor);
-    text-transform: uppercase;
-}
-.nav-link:hover{
+.navbar-brand:hover {
     color: var(--white);
     transition: var(--transition);
-
 }
-.active .nav-link{
-    color: var(--white);
+.nav-link {
+    color: var(--primaryColor) !important;
+    text-transform: uppercase;
+}
+.nav-link:hover {
+    color: var(--white) !important;
+    transition: var(--transition);
+}
+.active .nav-link {
+    color: var(--white) !important;
 }
 /* header */
 header {
@@ -85,19 +84,17 @@ header article {
     background: var(--white);
     padding: 100px;
 }
-/* main */
-
+/************** 
+main 
+***************/
 /* widget */
-
-.widget{
+.widget {
     border: 1px solid var(--primaryColor);
-
 }
-.widget h3{
+.widget h3 {
     background: var(--secondaryColor);
-    color: var(--white);
 }
-.widget ul li a{
+.widget ul li a {
     color: var(--primaryColor);
     text-decoration: none;
     border-bottom: 2px solid var(--secondaryColor);
@@ -105,13 +102,13 @@ header article {
     margin-bottom: 5px;
     transition: var(--transition);
 }
-.widget ul li a:hover{
+.widget ul li a:hover {
     background: var(--secondaryColor);
     color: var(--white);
     padding-left: 30px;
 }
 /* post */
-.post .text{
+.post .text {
     width: 80%;
     margin: auto;
     position: relative;
@@ -119,74 +116,73 @@ header article {
     background: var(--white);
     border-bottom: 6px solid var(--secondaryColor);
 }
-.post h2{
+.post h2 {
     color: var(--secondaryColor);
     font-size: 2.5rem;
     text-shadow: 0 0 1px var(--primaryColor);
 }
 /* footer */
-footer{
+footer {
     background: var(--secondaryColor);
 }
-footer p{
+footer p {
     background: var(--primaryColor);
 }
 
-/* bottomBar */
-.bottombar{
+/* bottombar */
+.bottombar {
     background: var(--primaryColor);
-    border-bottom: 15px solid var(--secondaryColor);
 }
-.bottombar p{
-    margin-bottom: 0;
+.bottombar p {
     margin-top: 0;
+    margin-bottom: 0;
 }
-
-/* RESPONSIVE */
-@media(max-width: 768px) and (max-width: 1025px){
-    header h1{
-        font-size: 2rem !important;
+@media(min-width: 768px) and (max-width: 1025px) {
+    header h1 {
+        font-size: 3rem !important;
     }
-    header{
+    header {
         background-position: center left;
         height: 80vh;
-        bottom: 5%;
     }
-    header article{
-        right: 0%;
-        bottom: 0;
+    header article {
+        width: 60%;
+        left: 0%;
+        bottom: 5%;
         padding: 50px;
-        background: (255,255,255,.8);
+    }
+    .post .text {
+        padding: 20px !important;
     }
 }
-@media(max-width: 767px){
-    
-    header h1{
-        font-size: 2rem !important;
-        
+@media(max-width: 767px) {
+    .topbar .col-md-6 {
+        text-align: center !important;
     }
-    header{
+    header h1 {
+        font-size: 2rem !important;
+    }
+    header {
         background-position: left;
         height: 80vh;
     }
-    header article{
+    header article {
         right: 0%;
         bottom: 0;
         padding: 50px;
-        background: (255,255,255,.8);
+        background: rgba(255,255,255,.8);
     }
-    .main .col-md-4{
+    .main .col-md-4 {
         order: 2;
     }
-    .main .col-md-8{
+    .main .col-md-8 {
         order: 1;
     }
-    
-    .post .text{
-        padding: 10px !important;
+    .post .text {
         width: 90%;
         top: -50px;
     }
-
-
+    .post .text {
+        padding: 20px !important;
+    }
 }
