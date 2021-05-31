@@ -1,0 +1,169 @@
+:root {
+    --blue: #49bfff;
+    --white: #fff;
+    --gray: #333;
+    --fontSize: 16px;
+    --transition: .3s ease;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: var(--fontSize);
+}
+a:hover{
+    transition: var(--transition);
+}
+.bg-light{
+    background: var(--blue) !important;
+}
+.btn-outline-primary{
+    color: var(--white);
+    border-color: white;
+    border-radius: 0;
+}
+.btn-outline-primary:hover{
+    background: var(--white);
+    color: var(--gray);
+    border-color: white;
+    transition: var(--transition);
+
+}
+/* nav */
+
+.bg-light{
+    background: var(--blue) !important;
+}
+.navbar-brand{
+    color: var(--white) !important;
+    font-size: 2rem;
+}
+.navbar-brand:hover{
+    color: var(--gray) !important;
+}
+.nav-link{
+    color: var(--white) !important;
+    text-transform: uppercase;
+}
+.nav-link:hover{
+    color: var(--gray) !important;
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: var(--gray)!important;
+}
+/* slider - carousel */
+
+.carousel-caption {
+    bottom: 33%;  
+    text-align: left;
+}
+    /* intro */
+.intro h2{
+    padding: 20px 0;
+}
+.intro h2 span{
+    background: var(--blue);
+}
+/* counter */
+.counter i{
+    color: var(--blue);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+/* plan */
+.plan{
+    background: var(--blue);
+}
+.plan .icons{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: var(--white);
+    color: var(--blue);
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.plan h3{
+    margin-bottom: 20px;
+}
+/* packages */
+.packages .price{
+    position: relative;
+}
+.packages .price p{
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+    background: var(--blue);
+    color: var(--white);
+    padding: 3px 6px;
+}
+.packages .card-body i{
+    color: var(--blue);
+}
+.packages .card-body h5{
+    font-weight: bold;
+}
+.packages button{
+    margin: auto;
+    margin-top: 40px;
+}
+/* packages */
+.trip  {
+    padding: 100px 0;
+    margin-bottom: 0;
+    border-radius: 0;
+    background-image: linear-gradient(
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)),
+        url(img/slide-palms.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* destinations */
+
+.destinatioons .col-md-3{
+    position: relative;
+}
+.destinations .stars{
+    position: absolute;
+    top: 45px;
+    right: 25px;
+    background: var(--blue);
+    color: var(--white);
+    padding: 3px;
+}
+/* footer */
+footer{
+    color: lightgray;
+}
+footer .socials li{
+    margin-right: 10px;
+}
+footer input{
+    background: black;
+    color: lightgray;
+    pad: 5px;
+}
+footer i{
+    position: relative;
+    left: -30px;
+    color: var(--white);
+}
+footer .list-unstyled a{
+    color: lightgray;
+    text-decoration: none;
+}
+footer .list-unstyled a:hover{
+    color: var(--blue);
+}
+/* bottomBar */
+
+.bottomBar{
+    padding: 20px 0 10px 0;
+    background: var(--blue);
+    color: var(--white);
+}
