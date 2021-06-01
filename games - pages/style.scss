@@ -1,0 +1,109 @@
+/*--- IMPORT FONT ---*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+/*--- VARS ---*/
+$fontFamily: "Roboto", sans-serif;
+$black: #081624;
+$darkBlue: #0c062e;
+$pink: #501755;
+$darkPink: #492866;
+$violet: #2d1854;
+$accents: #b41aab;
+$lightGray: #9190a5;
+$white: #fff;
+$fontSize: 16px;
+$transition: 0.4s ease;
+$padding: 80px 0;
+
+/*mixins*/
+@mixin bgImg($bgPosition, $bgSize,$height){
+    background-position: $bgPosition;
+    background-size: $bgSize;
+    height: $height;
+}
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+/*basic styles*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    line-height: 1.6;
+    color: $white;    
+}
+.container{
+    width: 70%;
+    margin: auto;
+}
+.bars {
+    color: $lightGray;
+    a{
+        color: $lightGray;
+        margin-left: 10px;
+    &:hover{
+        color: $accents
+        }
+    }
+}
+.logo{
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: 900;
+    span{
+        color: $accents;
+        font-style: italic;
+        text-shadow: 0 0 5px $white;
+    }
+    &:hover{
+    color: $ac;
+    }
+}
+
+
+a{
+    transition: $transition;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/*header*/
+
+header{
+    background-image: 
+    linear-gradient( to right,
+                    rgba($accents, .7),
+                    rgba($darkBlue, .7)),
+        url(img/header.jpg);
+    @include bgImg(
+        center, 
+        cover, 
+        100vh 
+        );
+    .topbar{
+        @extend .bars;
+        text-align: right;
+        padding: 20px 0;
+        
+    }
+    nav{
+        background: $black;
+        @include flex(space-between, center, row)
+        &>a{
+            @extend .logo;
+        }
+    }
+}
+/*header*/
+

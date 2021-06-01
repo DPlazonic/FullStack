@@ -1,0 +1,98 @@
+/*--- IMPORT FONT ---*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+/*--- VARS ---*/
+/*mixins*/
+/*basic styles*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+.bars, header .topbar {
+  color: #9190a5;
+}
+
+.bars a, header .topbar a {
+  color: #9190a5;
+  margin-left: 10px;
+}
+
+.bars a:hover, header .topbar a:hover {
+  color: #b41aab;
+}
+
+.logo, header nav > a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.logo span, header nav > a span {
+  color: #b41aab;
+  font-style: italic;
+  text-shadow: 0 0 5px #fff;
+}
+
+.logo:hover, header nav > a:hover {
+  color: #b41aab;
+}
+
+a {
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/*header*/
+header {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(180, 26, 171, 0.7)), to(rgba(12, 6, 46, 0.7))), url(img/header.jpg);
+  background-image: linear-gradient(to right, rgba(180, 26, 171, 0.7), rgba(12, 6, 46, 0.7)), url(img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+
+header .topbar {
+  text-align: right;
+  padding: 20px 0;
+}
+
+header nav {
+  background: #081624;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+/*header*/
+/*# sourceMappingURL=style.css.map */
