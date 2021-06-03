@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;400;700&display=swap');
+$red: #d8303e;
+$red2: #c1262e;
+$red3: #a72230;
+$black: #231f20;
+$text:#444;
+$white:#fff;
+$lightgray: #f3f3f3;
+$fontFamily: 'Public Sans',
+sans-serif;
+$fontSize: 16px;
+$transition: .3s ease;
+
+/* basic styles */
+
+body {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $text;
+}
+
+
+/*  nav */
+
+nav {
+    img {
+        width: 150px;
+    }
+    .nav-link {
+        color: $white;
+        text-transform: uppercase;
+    }
+    .active {
+        .nav-link {
+            color: $red2;
+        }
+    }
+}
+
+
+/*  mainHeader */
+
+.mainHeader {
+    background-image: linear-gradient(rgba($black, .5), rgba($black, .5)), url(img/skola-veb-dizajna-header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    .container {
+        height: 100vh;
+        .col-md-4 {
+            background: rgba($red2, .7);
+            flex: 0 0 30%;
+            a {
+                color: $white;
+            }
+        }
+    }
+}

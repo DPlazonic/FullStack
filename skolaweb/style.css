@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;400;700&display=swap");
+/* basic styles */
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  color: #444;
+}
+
+/*  nav */
+nav img {
+  width: 150px;
+}
+nav .nav-link {
+  color: #fff;
+  text-transform: uppercase;
+}
+nav .active .nav-link {
+  color: #c1262e;
+}
+
+/*  mainHeader */
+.mainHeader {
+  background-image: linear-gradient(rgba(35, 31, 32, 0.5), rgba(35, 31, 32, 0.5)), url(img/skola-veb-dizajna-header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.mainHeader .container {
+  height: 100vh;
+}
+.mainHeader .container .col-md-4 {
+  background: rgba(193, 38, 46, 0.7);
+  flex: 0 0 30%;
+}
+.mainHeader .container .col-md-4 a {
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
