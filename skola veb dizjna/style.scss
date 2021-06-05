@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;400;700&display=swap');
+$red: #d8303e;
+$red2: #c1262e;
+$red3: #a72230;
+$black: #231f20;
+$text:#444;
+$white:#fff;
+$link:rgb(52,
+52,
+52);
+$lightgray: #f3f3f3;
+$fontFamily: 'Public Sans',
+sans-serif;
+$fontSize: 16px;
+$transition: .3s ease;
+
+/* mixins */
+
+@mixin flex($justify,
+$align,
+$direction) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@mixin btn($bg,
+$color,
+$bgHover) {
+    background: $bg;
+    color: $color;
+    padding: 10px 40px;
+    font-size: 1rem;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+        background: $bgHover;
+    }
+}
+
+@mixin bgImg($position,
+$size,
+$height) {
+    background-position: $position;
+    background-size: $size;
+    height: $height;
+}
+
+
+/* basic styles */
+
+body {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    color: $text;
+}
+
+a {
+    transition: $transition;
+}
+
+.py-5 {
+    padding: 100px 0 !important;
+}
+
+.underline {
+    display: block;
+    content: "";
+    width: 200px;
+    height: 5px;
+    background: linear-gradient(to right, $red, $red2, $red3);
+    margin: 20px auto;
+}
+
+h2 {
+    font-size: 3rem;
+    &:after {
+        @extend .underline;
+    }
+}
+
+
+/*  nav */
+
+nav {
+    img {
+        width: 150px;
+    }
+    .nav-link {
+        color: $white;
+        text-transform: uppercase;
+        &:hover {
+            color: $red;
+        }
+    }
+    .active {
+        .nav-link {
+            color: $red2;
+        }
+    }
+}
+
+
+/*  mainHeader */
+
+.mainHeader {
+    background-image: linear-gradient(rgba($black, .3), rgba($black, .3)), url(img/skola-veb-dizajna-header.jpg);
+    @include bgImg(50% 0,
+    cover,
+    100vh);
+    .container {
+        height: 100vh;
+        .col-md-4 {
+            background: rgba($red2, .85);
+            flex: 0 0 30%;
+            a {
+                color: $white;
+            }
+        }
+    }
+}
+
+
+/*  footer */
+
+footer {
+    background: $lightgray;
+    .container:first-child {
+        @include flex(space-between,
+        flex-start,
+        row);
+        border-bottom: 1px solid rgba($text, .2);
+        div {
+            flex: 0 0 20%;
+            img {
+                width: 150px;
+            }
+            a {
+                color: $link;
+                &:hover {
+                    color: $red;
+                }
+            }
+            ul {
+                line-height: 2;
+            }
+            h4 {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+
+/* o nama */
+
+.onama {
+    .col-md-6 {
+        flex: 0 0 47%;
+    }
+}
+
+
+/* kursevi */
+
+.kursevi {
+    background: $red;
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    .card {
+        border: none;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        button {
+            @include btn($black,
+            $white,
+            $red);
+            padding: 10px 20px;
+        }
+    }
+}
+
+
+/* blog */
+
+.blog {
+    .card {
+        position: relative;
+        .meta {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: rgba($red2, .85);
+            p {
+                margin-bottom: 0;
+                padding: 10px;
+                color: $white;
+                a {
+                    color: $white;
+                    text-decoration: underline;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        img {
+            transition: transform .5s linear;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+        .holder {
+            overflow: hidden;
+        }
+        .card-body {
+            padding: 30px;
+            button {
+                @include btn($red,
+                $white,
+                $black);
+            }
+        }
+    }
+}
+
+
+/* onamaHeaader */
+
+.onamaHeaader {
+    background-image: linear-gradient(rgba($black, .3), rgba($black, .3)), url(img/onama.jpg);
+    @include bgImg(center,
+    cover,
+    60vh);
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+
+/* onamaUvod */
+
+.onamaUvod {
+    h3 {
+        color: $red;
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+}
+
+
+/* ctaKursevi */
+
+.ctaKursevi {
+    background-image: linear-gradient(rgba($black, .3), rgba($black, .3)), url(img/ctakursevi.jpg);
+    @include bgImg(center,
+    cover,
+    60vh);
+    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+    button {
+        @include btn($red,
+        $white,
+        $red3)
+    }
+}
+
+
+/* predavaci */
+
+.predavaci {
+    .card {
+        border: 1px solid $black;
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        button {
+            @include btn($red,
+            $white,
+            $red);
+            padding: 10px 20px;
+        }
+    }
+}

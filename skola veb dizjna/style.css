@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;300;400;700&display=swap");
+/* mixins */
+/* basic styles */
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 16px;
+  color: #444;
+}
+
+a {
+  transition: 0.3s ease;
+}
+
+.py-5 {
+  padding: 100px 0 !important;
+}
+
+.underline, h2:after {
+  display: block;
+  content: "";
+  width: 200px;
+  height: 5px;
+  background: linear-gradient(to right, #d8303e, #c1262e, #a72230);
+  margin: 20px auto;
+}
+
+h2 {
+  font-size: 3rem;
+}
+/*  nav */
+nav img {
+  width: 150px;
+}
+nav .nav-link {
+  color: #fff;
+  text-transform: uppercase;
+}
+nav .nav-link:hover {
+  color: #d8303e;
+}
+nav .active .nav-link {
+  color: #c1262e;
+}
+
+/*  mainHeader */
+.mainHeader {
+  background-image: linear-gradient(rgba(35, 31, 32, 0.3), rgba(35, 31, 32, 0.3)), url(img/skola-veb-dizajna-header.jpg);
+  background-position: 50% 0;
+  background-size: cover;
+  height: 100vh;
+}
+.mainHeader .container {
+  height: 100vh;
+}
+.mainHeader .container .col-md-4 {
+  background: rgba(193, 38, 46, 0.85);
+  flex: 0 0 30%;
+}
+.mainHeader .container .col-md-4 a {
+  color: #fff;
+}
+
+/*  footer */
+footer {
+  background: #f3f3f3;
+}
+footer .container:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+}
+footer .container:first-child div {
+  flex: 0 0 20%;
+}
+footer .container:first-child div img {
+  width: 150px;
+}
+footer .container:first-child div a {
+  color: #343434;
+}
+footer .container:first-child div a:hover {
+  color: #d8303e;
+}
+footer .container:first-child div ul {
+  line-height: 2;
+}
+footer .container:first-child div h4 {
+  font-size: 1.5rem;
+}
+
+/* o nama */
+.onama .col-md-6 {
+  flex: 0 0 47%;
+}
+
+/* kursevi */
+.kursevi {
+  background: #d8303e;
+  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+}
+.kursevi .card {
+  border: none;
+}
+.kursevi .card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.kursevi .card button {
+  background: #231f20;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 1rem;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  padding: 10px 20px;
+}
+.kursevi .card button:hover {
+  background: #d8303e;
+}
+
+/* blog */
+.blog .card {
+  position: relative;
+}
+.blog .card .meta {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(193, 38, 46, 0.85);
+}
+.blog .card .meta p {
+  margin-bottom: 0;
+  padding: 10px;
+  color: #fff;
+}
+.blog .card .meta p a {
+  color: #fff;
+  text-decoration: underline;
+}
+.blog .card .meta p a:hover {
+  text-decoration: none;
+}
+.blog .card img {
+  transition: transform 0.5s linear;
+}
+.blog .card img:hover {
+  transform: scale(1.1);
+}
+.blog .card .holder {
+  overflow: hidden;
+}
+.blog .card .card-body {
+  padding: 30px;
+}
+.blog .card .card-body button {
+  background: #d8303e;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 1rem;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.blog .card .card-body button:hover {
+  background: #231f20;
+}
+
+/* onamaHeaader */
+.onamaHeaader {
+  background-image: linear-gradient(rgba(35, 31, 32, 0.3), rgba(35, 31, 32, 0.3)), url(img/onama.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+}
+.onamaHeaader h1 {
+  font-size: 5rem;
+}
+
+/* onamaUvod */
+.onamaUvod h3 {
+  color: #d8303e;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* ctaKursevi */
+.ctaKursevi {
+  background-image: linear-gradient(rgba(35, 31, 32, 0.3), rgba(35, 31, 32, 0.3)), url(img/ctakursevi.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+}
+.ctaKursevi button {
+  background: #d8303e;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 1rem;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.ctaKursevi button:hover {
+  background: #a72230;
+}
+
+/* predavaci */
+.predavaci .card {
+  border: 1px solid #231f20;
+}
+.predavaci .card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.predavaci .card button {
+  background: #d8303e;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 1rem;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  padding: 10px 20px;
+}
+.predavaci .card button:hover {
+  background: #d8303e;
+}
+
+/*# sourceMappingURL=style.css.map */
